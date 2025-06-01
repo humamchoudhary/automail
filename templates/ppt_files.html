@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% set nav_items=[{"name":"Home","link":"/","icon":"house"},{"name":"PPT Files","link":"/ppt_files","icon":"presentation"}] %}
+{% block content %}
+<div class="w-full px-4 mt-10">
+    <div class="bg-gray-800 rounded-lg shadow p-6">
+        <div class="mb-4 border-b border-gray-700 pb-2">
+            <h3 class="text-xl font-semibold flex items-center text-white">
+                <i class="fas fa-file-powerpoint text-red-500 mr-2"></i>
+                Generated PPT Files
+            </h3>
+        </div>
+
+        {% if files %}
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-700 text-white">
+                    <thead class="bg-gray-700 text-gray-300">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-sm font-semibold">File Name</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold">Size</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold">Created</th>
+                            <th class="px-4 py-2 text-left text-sm font-semibold">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-600">
+                        {% for file in files %}
+                        <tr>
+                            <td class="px-4 py-2 flex items-center">
+                                <i class="fas fa-file-powerpoint text-yellow-400 mr-2"></i>
+                                {{ file.name }}
+                            </td>
+                            <td class="px-4 py-2">{{ "%.2f"|format(file.size/1024) }} KB</td>
+                            <td class="px-4 py-2">{{ file.created }}</td>
+                            <td class="px-4 py-2">
+                                <a href="{{ url_for('download_file', filename=file.name) }}"
+                                   class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm transition">
+                                    <i class="fas fa-download mr-1"></i>Download
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="text-center py-8 text-gray-400">
+                <i class="fas fa-file-powerpoint fa-3x mb-3"></i>
+                <h5 class="text-lg font-medium">No PPT files found</h5>
+                <p>Process some emails first to generate PowerPoint presentations.</p>
+                <a href="{{ url_for('index') }}"
+                   class="mt-4 inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">
+                    <i class="fas fa-arrow-left mr-2"></i>Go to Dashboard
+                </a>
+            </div>
+        {% endif %}
+
+        <div class="mt-6">
+            <a href="{{ url_for('index') }}"
+               class="inline-flex items-center bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

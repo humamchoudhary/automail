@@ -1,0 +1,711 @@
+/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+@layer properties;
+.invisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.relative {
+  position: relative;
+}
+.static {
+  position: static;
+}
+.sticky {
+  position: sticky;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-50 {
+  z-index: 50;
+}
+.z-100 {
+  z-index: 100;
+}
+.z-1000 {
+  z-index: 1000;
+}
+.container {
+  width: 100%;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.ms-auto {
+  margin-inline-start: auto;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.table {
+  display: table;
+}
+.h-\[1px\] {
+  height: 1px;
+}
+.h-\[20vh\] {
+  height: 20vh;
+}
+.h-\[90vh\] {
+  height: 90vh;
+}
+.h-\[96vh\] {
+  height: 96vh;
+}
+.h-full {
+  height: 100%;
+}
+.h-min {
+  height: min-content;
+}
+.h-screen {
+  height: 100vh;
+}
+.w-1\/2 {
+  width: calc(1 / 2 * 100%);
+}
+.w-3\/4 {
+  width: calc(3 / 4 * 100%);
+}
+.w-full {
+  width: 100%;
+}
+.w-min {
+  width: min-content;
+}
+.w-screen {
+  width: 100vw;
+}
+.min-w-\[50px\] {
+  min-width: 50px;
+}
+.flex-1 {
+  flex: 1;
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.grow {
+  flex-grow: 1;
+}
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,)
+    var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.resize {
+  resize: both;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.self-end {
+  align-self: flex-end;
+}
+.justify-self-end {
+  justify-self: flex-end;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}
+.border {
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+.border-r-4 {
+  border-right-style: var(--tw-border-style);
+  border-right-width: 4px;
+}
+.border-b {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+}
+.border-b-2 {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 2px;
+}
+.border-l {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 1px;
+}
+.border-\[\#132f41\] {
+  border-color: #132f41;
+}
+.border-\[var\(--goglobe-border-color\)\] {
+  border-color: var(--goglobe-border-color);
+}
+.border-\[var\(--goglobe-hover-color\)\] {
+  border-color: var(--goglobe-hover-color);
+}
+.border-r-\[var\(--goglobe-border-color\)\] {
+  border-right-color: var(--goglobe-border-color);
+}
+.\!bg-\[var\(--goglobe-input-color\)\] {
+  background-color: var(--goglobe-input-color) !important;
+}
+.\!bg-\[var\(--goglobe-main-color\)\] {
+  background-color: var(--goglobe-main-color) !important;
+}
+.bg-\[\#0d1b26\] {
+  background-color: #0d1b26;
+}
+.bg-\[\#001c2e\] {
+  background-color: #001c2e;
+}
+.bg-\[rgba\(255\,88\,0\,0\.2\)\] {
+  background-color: rgba(255, 88, 0, 0.2);
+}
+.bg-\[var\(--goglobe-bg-color\)\] {
+  background-color: var(--goglobe-bg-color);
+}
+.bg-\[var\(--goglobe-body-color\)\] {
+  background-color: var(--goglobe-body-color);
+}
+.bg-\[var\(--goglobe-border-color\)\] {
+  background-color: var(--goglobe-border-color);
+}
+.bg-\[var\(--goglobe-input-color\)\] {
+  background-color: var(--goglobe-input-color);
+}
+.bg-\[var\(--goglobe-main-color\)\] {
+  background-color: var(--goglobe-main-color);
+}
+.bg-\[var\(--goglobe-site-bg-color\)\] {
+  background-color: var(--goglobe-site-bg-color);
+}
+.object-cover {
+  object-fit: cover;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-nowrap {
+  text-wrap: nowrap;
+}
+.text-wrap {
+  text-wrap: wrap;
+}
+.break-all {
+  word-break: break-all;
+}
+.text-clip {
+  text-overflow: clip;
+}
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+.text-\[\#ff5800\] {
+  color: #ff5800;
+}
+.text-\[var\(--goglobe-heading-color\)\] {
+  color: var(--goglobe-heading-color);
+}
+.text-\[var\(--goglobe-hover-color\)\] {
+  color: var(--goglobe-hover-color);
+}
+.text-\[var\(--goglobe-main-color\)\] {
+  color: var(--goglobe-main-color);
+}
+.text-\[var\(--goglobe-site-bg-color\)\] {
+  color: var(--goglobe-site-bg-color);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.italic {
+  font-style: italic;
+}
+.placeholder-\[var\(--goglobe-body-color\)\] {
+  &::placeholder {
+    color: var(--goglobe-body-color);
+  }
+}
+.opacity-25 {
+  opacity: 25%;
+}
+.opacity-75 {
+  opacity: 75%;
+}
+.outline {
+  outline-style: var(--tw-outline-style);
+  outline-width: 1px;
+}
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,)
+    var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,)
+    var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.filter {
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,)
+    var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,)
+    var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.transition {
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    outline-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    --tw-gradient-from,
+    --tw-gradient-via,
+    --tw-gradient-to,
+    opacity,
+    box-shadow,
+    transform,
+    translate,
+    scale,
+    rotate,
+    filter,
+    -webkit-backdrop-filter,
+    backdrop-filter,
+    display,
+    visibility,
+    content-visibility,
+    overlay,
+    pointer-events;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.transition-colors {
+  transition-property:
+    color, background-color, border-color, outline-color, text-decoration-color,
+    fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+  transition-timing-function: var(--tw-ease, ease);
+  transition-duration: var(--tw-duration, 0s);
+}
+.duration-200 {
+  --tw-duration: 200ms;
+  transition-duration: 200ms;
+}
+.duration-300 {
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+}
+.outline-none {
+  --tw-outline-style: none;
+  outline-style: none;
+}
+.file\:border-0 {
+  &::file-selector-button {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
+}
+.file\:bg-transparent {
+  &::file-selector-button {
+    background-color: transparent;
+  }
+}
+.hover\:cursor-pointer {
+  &:hover {
+    @media (hover: hover) {
+      cursor: pointer;
+    }
+  }
+}
+.hover\:bg-\[\#0c2434\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: #0c2434;
+    }
+  }
+}
+.hover\:bg-\[var\(--goglobe-border-color\)\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--goglobe-border-color);
+    }
+  }
+}
+.hover\:bg-\[var\(--goglobe-hover-color\)\]\/10 {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--goglobe-hover-color);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(
+          in oklab,
+          var(--goglobe-hover-color) 10%,
+          transparent
+        );
+      }
+    }
+  }
+}
+.hover\:bg-\[var\(--goglobe-main-color\)\] {
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--goglobe-main-color);
+    }
+  }
+}
+.hover\:text-\[var\(--goglobe-site-bg-color\)\] {
+  &:hover {
+    @media (hover: hover) {
+      color: var(--goglobe-site-bg-color);
+    }
+  }
+}
+.focus\:border-\[var\(--goglobe-main-color\)\] {
+  &:focus {
+    border-color: var(--goglobe-main-color);
+  }
+}
+.focus\:bg-\[var\(--goglobe-site-bg-color\)\] {
+  &:focus {
+    background-color: var(--goglobe-site-bg-color);
+  }
+}
+.focus\:ring-2 {
+  &:focus {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+      calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+      var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}
+.focus-visible\:ring-2 {
+  &:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0
+      calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+      var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}
+.focus-visible\:ring-offset-2 {
+  &:focus-visible {
+    --tw-ring-offset-width: 2px;
+    --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0
+      var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  }
+}
+.focus-visible\:outline-none {
+  &:focus-visible {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+}
+.disabled\:pointer-events-none {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+.disabled\:cursor-not-allowed {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+.disabled\:opacity-50 {
+  &:disabled {
+    opacity: 50%;
+  }
+}
+.\[\&_svg\]\:pointer-events-none {
+  & svg {
+    pointer-events: none;
+  }
+}
+.\[\&_svg\]\:shrink-0 {
+  & svg {
+    flex-shrink: 0;
+  }
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or
+    ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
+    *,
+    ::before,
+    ::after,
+    ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+    }
+  }
+}

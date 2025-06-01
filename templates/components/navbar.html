@@ -1,0 +1,6 @@
+<div
+  class="h-screen w-[250px] min-w-[250px] bg-[var(--sec-bg-color)] flex flex-col gap-[16px] px-[30px] py-[40px] border-r border-[var(--border-color)]"
+>
+  {% if nav_items %} {% for nav_item in nav_items %} {% include
+  "components/nav_item.html" %} {% endfor %} {% endif %}
+</div>

@@ -1,0 +1,7 @@
+<a
+  href="{{ nav_item['link'] }}"
+  class="{% if request.path == nav_item['link'] %}text-white {% else %}text-[var(--main-color)]{% endif %} flex flex-row gap-[16px] hover:cursor-pointer items-center font-bold"
+>
+  <i data-lucide="{{ nav_item['icon'] }}" class="size-[16px]"></i>
+  <p class="text-sm">{{ nav_item['name'] }}</p>
+</a>

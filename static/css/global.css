@@ -1,0 +1,25 @@
+:root {
+  --sec-bg-color: #001f33;
+  --main-color: #ff5800;
+  --bg-color: #001523;
+  --border-color: #253239;
+
+  --font-family: "Proxima Nova", sans-serif;
+}
+
+html {
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+*:after,
+*:before,
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+
+  font-family: var(--font-family);
+}
